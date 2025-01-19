@@ -1,0 +1,1 @@
+This bug occurs when using the Expo ImagePicker library.  The issue is that the `launchImageLibraryAsync` function sometimes returns an object with a `cancelled` property set to `true`, even when the user successfully selects an image. This causes unexpected behavior in the application because the app assumes the cancellation was intentional.
